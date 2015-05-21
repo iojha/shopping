@@ -5,41 +5,43 @@
 	<title>Shopping App</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
 <body>
 	
 	<div class="logo"><img src="images/ShopEasy-logo.svg" width="300px">
 	</div>
 	
-	<div class="nav">
+	<section id="nav">
 		<ul>
 			<li class="active"><i class="fa fa-plus-circle"> New List</i></li>
 			<li>My Lists</li>
 			<li><i class="fa fa-cog"> Settings</i></li>
 		</ul>
-	</div>
+	</section>
 	
 	<hr>
 
-	<div class="new-list">
-		<div class="list-name">
-			<h2> Add item here</h2>
-		</div>
-		<div class="add-btn">
-			<h2> Add</h2>
-		</div>
+	<section id="new-list" class="container">
+			<input type="text" placeholder="Add item here" class="enter">
+			
+			<button type="button" id="btn" value="Add">
+				<h2>Add</h2>
+			</button>
+
 
 		<div class="list">
-			<ul>
-				<li class="delete"><i class="fa fa-trash"></i></li>
-				<li class="item">Item Name</li>
-				<li class="amount">1</li>
-				<li class="add"><i class="fa fa-plus-circle"></i></li>
-				<li class="substract"><i class="fa fa-minus-circle"></i></li>
-			</ul>
+			<ol>
+			<li>
+				<div class="item"></div>
+				<div class="check"><i class="fa fa-check-circle fa-2x"></i></div>
+				<div class="delete"><i class="fa fa-trash fa-2x"></i></div>
+			</li>
+			</ol>
 		</div>
-	</div>
-
-
+	</section>
 
 
 </body>

@@ -18,19 +18,19 @@ h1 {
 }
 
 h2 {
-	font-size: 1.25em;
+	font-size: 1em;
 	font-family: "helvetica-neue", helvetica, sans-serif;
 	font-weight: 100;
 }
 
-.nav {
+#nav {
 	margin: 0 auto;
 	text-align: center;
 	list-style-type: none;
 	padding-left:none !important;
 }
 
-.nav ul li {
+#nav ul li {
 	display: inline-block;
 	margin: .25em 1.5em;
 	text-align:center;
@@ -43,7 +43,7 @@ h2 {
 	color: #000;
 }
 
-.nav ul li:hover {
+#nav ul li:hover {
 /*	border-bottom: #5d5d5d solid .15em;
 	padding: .5em .5em; */
 	color: #000;
@@ -64,44 +64,50 @@ hr {
 	width: 50%;
 }
 
-.new-list {
+#new-list {
 	margin: 0 auto;
 	padding-top: 5em;
+}
+
+.container {
 	width: 37rem;
 }
 
-.list-name {
+.enter {
 	background-color: #3f3f3f;
 	border: #000 solid 1px;
 	border-radius: .5em;
-	width: 30rem;
+	width: 78%;
 	height: auto;
 	margin: 0 auto;
 	color: #fff;
-	padding-left: .10em;
-	padding-right: .10em;
+	padding: .75rem .75rem;
+	font-size: 1em;
+	font-weight: 100;
 }
 
-.add-btn {
+#btn {
 	display: inline-block;
 	background-color: #ed5329;
 	border: gray solid 1px;
 	border-radius: .5em;
-	width: 5rem;
+	width: 15%;
 	height: auto;
-	margin: 0 auto;
-
+	margin-left: .5rem;
 }
 
-.list-name, .add-btn{
+#btn:hover {
+  background: #ef8669;
+  text-decoration: none;
+}
+
+.enter, #btn{
 	display: inline-block;
 	color: #fff;
 	text-align: center;
-	margin-left:.5rem;
 }
 
-.list ul li{
-	list-style-type: none;
+.item, .check, .delete{
 	display:inline-block;
 	padding: 3em .5em .5em .5em;
 }
@@ -110,3 +116,4 @@ hr {
 	width: 75%;
 	border-bottom: #000 solid 1px;
 }
+
