@@ -107,13 +107,21 @@ hr {
 	text-align: center;
 }
 
-.item, .check, .delete{
+.item, .check, .delete, .check .hidden{
 	display:inline-block;
-	padding: 3em .5em .5em .5em;
+	padding: 1em .5em .5em .5em;
 }
 
 .list .item {
 	width: 75%;
 	border-bottom: #000 solid 1px;
+}
+
+.hidden {
+display: none;
+}
+
+#clicked {
+	color: green;
 }
 
