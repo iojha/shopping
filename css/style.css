@@ -121,7 +121,10 @@ hr {
 display: none;
 }
 
-#clicked {
-	color: green;
+.checked {
+	opacity: .5 ;
 }
 
+.unchecked {
+	opacity: 1;
+}
