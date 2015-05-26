@@ -19,6 +19,8 @@ $("document").ready(function() {
 			   	$('input').val('');
 			});
 
+			
+
 		    //Delete item
 		    $('.delete>i').on('click', function(){
 		    	$(this).closest('li').remove();
