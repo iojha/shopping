@@ -1,11 +1,8 @@
 $("document").ready(function() {
-			// $( "input" )
-			//   .keyup(function() {
-			//     var value = $(this).val();
-			//     $(".list>ol").append("<li><div class='item'>" + value + "</div></li>");
-			// 	});
 
-		    $("#btn").on('click', function() {
+
+		    $('#btn').on('click', function() {
+
 			    var value = $('input').val();
 			    if ($('.sample').length) {
 			    	$('.sample').remove()
@@ -15,11 +12,15 @@ $("document").ready(function() {
 			    template.addClass('unchecked');
 			    template.find('.item').text(value);
 			    
-			    $(".list>ol").append(template);	 
+			    $('.list>ol').append(template);	 
 			   	$('input').val('');
+
 			});
 
-			
+			//FOR EMPTY INPUT
+			//		if ($('input').length == 0) {
+			//   		alert("You haven't entered anything to add");
+			//   	}			
 
 		    //Delete item
 		    $('.delete>i').on('click', function(){
@@ -37,11 +38,36 @@ $("document").ready(function() {
 		     		currentItem.removeClass('checked');
 		     		currentItem.addClass('unchecked');
 		     	}
+		     	});
 
-		    // 	$('ol').append(currentItem);
+		    // END OF LIST  
+		    //  S$('.check>i').on('click', function(){
+		    //  	if ($('.unchecked').length == 0){
+		    // 		alert("YAY! You bought everything on your list!");
+		    // 	}
+		    // });
+
+		    // APPEND 	
+		    //  $('ol').append(currentItem);
 		    //	$(move).css('color','red');
 		    //	$('ol').append(currentItem);
-			});
+		    
+		    
+
+		    $('#clear-checked-btn').on('click', function(){
+		    	if ($('.checked').length >= 1){
+		    		$('.checked').remove();
+		    	} else {
+		    		alert("You don't currently have any items checked-off.");
+		    	}
+		    });
+
+  
+//				$('#clear-all-btn').on('click', function() {
+//		    	$('.list>ol').empty();
+//		    });
+
+			
 });
 
 /*		    	checked.find('.item').text(template.find('.item').val());

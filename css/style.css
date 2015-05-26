@@ -1,5 +1,5 @@
 body {
-	background-color:#01c7a6;
+	background-color:#01c7a6; /*  CC9901*/
 	height:500px;
 	margin: none !important;
 	font-family: sans-serif;
@@ -71,6 +71,7 @@ hr {
 
 .container {
 	width: 37rem;
+	margin: 0 auto;
 }
 
 .enter {
@@ -88,16 +89,17 @@ hr {
 
 #btn {
 	display: inline-block;
-	background-color: #ed5329;
-	border: gray solid 1px;
+	background-color: #1485CC;
+	border: #0971b2 solid 1px;
 	border-radius: .5em;
 	width: 15%;
 	height: auto;
 	margin-left: .5rem;
+	color: #fff;
 }
 
 #btn:hover {
-  background: #ef8669;
+  background: #0971B2;
   text-decoration: none;
 }
 
@@ -129,6 +131,39 @@ display: none;
 	opacity: 1;
 }
 
-.disabled {
-	
+
+#clear-checked-btn {
+	display: inline-block;
+	background-color: #00B233;
+	border: #00942A solid 1px;
+	border-radius: .5em;
+	width: 45%;
+	height: auto;
+	margin-left: .5rem;
+	color: #fff;
+	margin-top: 3em;
+	float: left;
+}
+
+#clear-checked-btn:hover {
+  background: #00942A;
+  text-decoration: none;
+}
+
+#clear-all-btn {
+	display: inline-block;
+	background-color: #ed5329;
+	border: #b21212 solid 1px;
+	border-radius: .5em;
+	width: 45%;
+	height: auto;
+	margin-left: .5rem;
+	color: #fff;
+	margin-top: 3em;
+	float:right;
+}
+
+#clear-all-btn:hover {
+  background: #B21212;
+  text-decoration: none;
 }
