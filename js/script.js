@@ -8,19 +8,23 @@ $("document").ready(function() {
 			    	$('.sample').remove()
 			   	}
 
-			    var template = $('#template li');
+			//FOR BLANK INPUT
+				if (value === '') {
+			   	alert("You haven't entered anything to add");
+			   	
+			   	} else {
+
+			    var template = $('#template li'); //Hidden list from which items are being appended to li.sample list
 			    template.addClass('unchecked');
 			    template.find('.item').text(value);
-			    
+			  	console.log(template);
+
 			    $('.list>ol').append(template);	 
 			   	$('input').val('');
-
+			   }
 			});
 
-			//FOR EMPTY INPUT
-			//		if ($('input').length == 0) {
-			//   		alert("You haven't entered anything to add");
-			//   	}			
+		
 
 		    //Delete item
 		    $('.delete>i').on('click', function(){
@@ -38,14 +42,15 @@ $("document").ready(function() {
 		     		currentItem.removeClass('checked');
 		     		currentItem.addClass('unchecked');
 		     	}
-		     	});
 
-		    // END OF LIST  
-		    //  S$('.check>i').on('click', function(){
-		    //  	if ($('.unchecked').length == 0){
-		    // 		alert("YAY! You bought everything on your list!");
-		    // 	}
-		    // });
+		     	//Length of unchecked is == 1 because #template is always on page and has unchecked class
+		    	if ($('.list .unchecked').length == 1){ 
+		    		alert("YAY! You bought everything on your list!");
+		    	}
+
+		    });
+
+
 
 		    // APPEND 	
 		    //  $('ol').append(currentItem);
@@ -62,16 +67,15 @@ $("document").ready(function() {
 		    	}
 		    });
 
-  
-//				$('#clear-all-btn').on('click', function() {
-//		    	$('.list>ol').empty();
-//		    });
+  			
+  			//Clear button
+				$('#clear-all-btn').on('click', function() {
+		    	$('.list>ol').empty();
+		    });
 
 			
 });
-
-/*		    	checked.find('.item').text(template.find('.item').val());
-		    	template.remove();
+/*
 
 		    	$('.list>ol').append(checked);
 		    	checked.css('color','red');
